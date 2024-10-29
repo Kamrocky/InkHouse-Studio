@@ -1,0 +1,32 @@
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.nav-link {
+    color: white;
+    font-size: large;
+}
+
+.nav-link:hover {
+    color: coral;
+}
+
+/* Styl dla menu przed collapse */
+.navbar-nav .nav-link {
+    transition: all 0.3s ease; /* Płynne przejście */
+    text-align: center;
+    border: none;
+}
+
+/* Styl dla menu po collapse */
+.collapse.show .nav-link {
+    border-top: darkgray solid 1px;
+}
+
+#onas {
+    border: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
