@@ -1,32 +1,71 @@
+/* Reset i ogólne ustawienia */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #202020;
+}
+
+/* Layout */
+main {
+    flex: 1; /* Umożliwia elastyczne wypełnienie strony */
+}
+
+/* Nagłówek i menu */
 .navbar-brand img {
-    max-width: 150px;
+    width: auto;
+    height: 30px;
 }
 
 .nav-link {
     color: white;
-    font-size: large;
+    font-size: 1.2rem;
+    padding: 8px 15px;
 }
 
 .nav-link:hover {
     color: coral;
 }
 
-/* Styl dla menu przed collapse */
-.navbar-nav .nav-link {
-    transition: all 0.3s ease; /* Płynne przejście */
-    text-align: center;
-    border: none;
-}
-
-/* Styl dla menu po collapse */
-.collapse.show .nav-link {
-    border-top: darkgray solid 1px;
-}
-
-#onas {
-    border: none;
+.navbar {
+    background-color: #1c1c1c;
 }
 
 .navbar-toggler {
-    border: none;
+    color: white;
+}
+
+/* Sekcja opisu studia */
+#studio-description {
+    background-image: url('../images/bg2.jpg'); /* Ścieżka do obrazka */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    position: relative;
+    text-align: justify;
+    width: 100vw; /* Zajmuje całą szerokość widoku */
+}
+
+#studio-description .overlay {
+    background: rgba(0, 0, 0, 0.6); /* Ciemniejsza nakładka */
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* Stopka */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
 }
