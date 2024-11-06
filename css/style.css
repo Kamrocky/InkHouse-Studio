@@ -38,13 +38,35 @@ main {
     background-color: #1c1c1c;
 }
 
-.navbar-toggler {
+.custom-menu .nav-item {
+    border-bottom: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.custom-men-menu .nav-link {
     color: white;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+}
+
+.custom-menu .nav-link:hover {
+    color: coral;
+}
+
+@media (max-width: 576px) {
+    .custom-menu .nav-item {
+        border-bottom: 1px solid white;
+        margin: none;
+    }
+
+    .custom-menu .nav-item:last-child {
+        border-bottom: none;
+    }
 }
 
 /* Sekcja opisu studia */
 #studio-description {
-    background-image: url('../images/bg2.jpg'); /* Ścieżka do obrazka */
+    background-image: url('../images/bg.jpg'); /* Ścieżka do obrazka */
     background-size: cover;
     background-position: center;
     color: white;
