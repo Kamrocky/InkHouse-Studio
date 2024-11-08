@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>InkHouse Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
@@ -81,7 +82,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row align-items-center mb-4 flex-md-row-reverse artist-section">
+            <div class="row align-items-center flex-md-row-reverse artist-section">
                 <div class="col-md-4">
                     <img src="images/bartosz.jpg" alt="Bartosz Zając" class="img-fluid rounded artist-photo">
                 </div>
@@ -96,6 +97,91 @@
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="heading-decorated">Skontaktuj się z nami!</h2>
+            <div class="row contact-section mt-5">
+                <div class="col-md-3">
+                    <div>
+                        <h3>Adres</h3>
+                        <p>InkHouse Studio<br>
+                            ul. Przykładowa 123<br>
+                            00-000 Kraków</p>
+                    </div>
+                    <div>
+                        <h3>Godziny otwarcia</h3>
+                        <ul>
+                            <li>Pn - Pt: 10:00 - 20:00</li>
+                            <li>Sobota: 10:00 - 18:00</li>
+                            <li>Niedziela: Zamknięte</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Lokalizacja</h3>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                                src="https://maps.google.com/maps?hl=pl&amp;q=50.02950949968471,19.906210390279952&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            frameborder="0"
+                            style="border:0"
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Dane kontaktowe</h3>
+                    <ul class="list-unstyled">
+                        <li>Telefon: <span class="contact-items">+48 123 456 789</span></li>
+                        <li>Email: <a href="mailto:info@inkhousestudio.pl" class="contact-items">info@inkhouse.pl</a></li>
+                        <li>Booksy: <a href="https://booksy.com" target="_blank" class="contact-items">Zarezerwuj wizytę</a></li>
+                        <li class="mt-5"><a href="https://instagram.com/" target="_blank" class="instagram-icon">
+                            <i class="fab fa-instagram"></i> inkhouse.studio
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5" id="contact_form">
+                <h3>Formularz kontaktowy</h3>
+                <form class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="name">*Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="name" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">*Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Telefon">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="form-group flex-grow-1">
+                            <label for="message">*Wiadomość</label>
+                            <textarea class="form-control" id="message" placeholder="Twoja wiadomość" required></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-end">
+                            <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
 </main>
 
 <footer class="text-white text-center py-3 mt-auto">
