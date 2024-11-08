@@ -11,6 +11,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #202020;
+    padding-top: 30px;
 }
 
 /* Layout */
@@ -36,6 +37,8 @@ main {
 
 .navbar {
     background-color: #1c1c1c;
+    position: fixed;
+    width: 100%;
 }
 
 .custom-menu .nav-item {
@@ -43,7 +46,8 @@ main {
     margin-left: 20px;
     margin-right: 20px;
 }
-.custom-men-menu .nav-link {
+
+.custom-menu .nav-link {
     color: white;
     font-size: 1.2rem;
     padding: 8px 15px;
@@ -53,10 +57,10 @@ main {
     color: coral;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .custom-menu .nav-item {
         border-bottom: 1px solid white;
-        margin: none;
+        margin: 0;
     }
 
     .custom-menu .nav-item:last-child {
@@ -66,14 +70,16 @@ main {
 
 /* Sekcja opisu studia */
 #studio-description {
-    background-image: url('../images/bg.jpg'); /* Ścieżka do obrazka */
+    background-image: url('../images/bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 50px;
-    position: relative;
     text-align: justify;
-    width: 100vw; /* Zajmuje całą szerokość widoku */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #studio-description .overlay {
@@ -82,6 +88,83 @@ main {
     max-width: 600px;
     border-radius: 8px;
     margin: auto;
+}
+
+.heading-decorated {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.heading-decorated::before,
+.heading-decorated::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: coral;
+    margin: 0 20px;
+}
+
+.artist-photo {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.artist-photo:hover {
+    transform: scale(1.05);
+}
+
+.artist-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.artist-description h3 {
+    color: coral;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.artist-description > p {
+    line-height: 1.6;
+    font-size: large;
+}
+
+.artist-styles {
+    color: #bf502c;
+    font-size: 0.9rem;
+}
+
+.artist-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.artist-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.instagram-icon {
+    color: coral;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.instagram-icon:hover {
+    color: white;
 }
 
 /* Stopka */

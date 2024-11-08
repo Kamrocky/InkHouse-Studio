@@ -4,43 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>InkHouse Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo InkHouse" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto text-center custom-menu">
-                    <li class="nav-item"><a class="nav-link text-nowrap" id="onas" href="index.html">O nas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Cennik</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                </ul>
+<header class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo InkHouse">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto text-center custom-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">O&nbsp;nas</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Cennik</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="flex-fill">
+    <section id="studio-description" class="text-center py-5">
+        <div class="overlay p-4 rounded">
+            <h2>InkHouse Studio</h2>
+            <p>InkHouse Studio to miejsce, gdzie Twoje ciało spotyka się z prawdziwą sztuką – a czasem odrobiną szaleństwa. Nasi mistrzowie zamienią twoją wizję w unikalne arcydzieło - nawet zwykły wilk na przedramieniu będzie wyglądał lepiej niż inne ;)</p>
+            <p>Wpadnij do nas na konsultacje przy aromatycznej kawie, a my zrobimy wszystko, żebyś wyszedł z tatuażem, który będzie Cię cieszył przez całe życie (i który mama może kiedyś zaakceptuje). Więcej niż studio - doświadcz magii w InkHouse!</p>
+        </div>
+    </section>
+
+    <section id="employees" class="py-5">
+        <div class="container text-white">
+            <h2 class="heading-decorated">Poznaj naszych mistrzów!</h2>
+            <div class="row align-items-center mb-4 artist-section">
+                <div class="col-md-4">
+                    <img src="images/ragnar.jpg" alt="Ragnar Bjornson" class="img-fluid rounded artist-photo">
+                </div>
+                <div class="col-md-8 artist-description">
+                    <h3>Ragnar "Wiking" Bjornson</h3>
+                    <p>Inspirując się mroźną Skandynawią, Ragnar wprowadza swoich klientów w świat nordyckich bogów i legend. W jego pracach często pojawiają się runy, wilki, kruki i sceny bitewne, a jego podejście do detali sprawia, że każdy tatuaż wygląda jak starannie dopracowane dzieło sztuki. Ragnar specjalizuje się w technikach cieniowania, które nadają tatuażom głębię i efekt trójwymiarowości. Klienci cenią go za autentyczność i umiejętność odwzorowania symboliki nordyckiej, co nadaje tatuażom osobisty i mocny wydźwięk.</p>
+                    <p class="artist-styles">#motywy nordyckie, #mitologia, #runy, #zwierzęta, #pejzaże skandynawskie</p>
+                    <a href="https://instagram.com/" target="_blank" class="instagram-icon">
+                        <i class="fab fa-instagram"></i>ragnar_tattoo
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4 flex-md-row-reverse artist-section">
+                <div class="col-md-4">
+                    <img src="images/maya.jpg" alt="Maya Zielińska" class="img-fluid rounded artist-photo">
+                </div>
+                <div class="col-md-8 artist-description">
+                    <h3>Maya Zielińska</h3>
+                    <p>Maya specjalizuje się w tatuażach z motywami roślinnymi, nadając swoim pracom delikatny i organiczny charakter. Jej technika, przypominająca akwarelowe malowanie, oddaje piękno i lekkość przyrody. Maya uwielbia tworzyć delikatne liście, kwiaty i zioła, idealne dla miłośników subtelnych, estetycznych wzorów. Klienci wybierają ją, aby ich tatuaże były odzwierciedleniem osobistego połączenia z naturą, a jej prace często przypominają żywe obrazy, które w subtelny sposób zdobią ciało.</p>
+                    <p class="artist-styles">#roślinność, #kwiaty, #delikatne linie, #minimalizm, #akwarele</p>
+                    <a href="https://instagram.com/" target="_blank" class="instagram-icon">
+                        <i class="fab fa-instagram"></i>maya_zielinska
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4 artist-section">
+                <div class="col-md-4">
+                    <img src="images/leon.jpg" alt="Leon Janik" class="img-fluid rounded artist-photo">
+                </div>
+                <div class="col-md-8 artist-description">
+                    <h3>Leon Janik</h3>
+                    <p>Leon to artysta, który ożywia tatuaże dzięki swojemu talentowi do realizmu. Specjalizuje się w skomplikowanych portretach i realistycznych krajobrazach, potrafiąc uchwycić najmniejsze szczegóły i nadawać im głębię. Klienci doceniają jego precyzyjne podejście, dzięki któremu tatuaże wydają się niemalże fotografiami. Leon jest doskonałym wyborem dla osób, które chcą, by ich tatuaże były wiernym odzwierciedleniem rzeczywistości, od twarzy bliskich osób po majestatyczne pejzaże natury.</p>
+                    <p class="artist-styles">#realizm, #portrety, #detale, #przyroda</p>
+                    <a href="https://instagram.com/" target="_blank" class="instagram-icon">
+                        <i class="fab fa-instagram"></i>leon.janik.official
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4 flex-md-row-reverse artist-section">
+                <div class="col-md-4">
+                    <img src="images/bartosz.jpg" alt="Bartosz Zając" class="img-fluid rounded artist-photo">
+                </div>
+                <div class="col-md-8 artist-description">
+                    <h3>Bartosz Zając</h3>
+                    <p>Bartek tworzy tatuaże, które wyglądają, jakby wyszły prosto z komiksów czy kreskówek. Jego styl opiera się na mocnych konturach, żywych kolorach i dynamicznych formach, dzięki czemu jego prace przyciągają uwagę i wyróżniają się na tle innych. Bartek uwielbia ożywiać znane postacie z gier, filmów i kreskówek, a także tworzyć oryginalne wzory z nutą humoru i energii. Klienci cenią jego prace za unikalność i lekkość, która doskonale oddaje ich osobowość.</p>
+                    <p class="artist-styles">#tatuaże kreskówkowe, #pop-art, #postacie z gier, #postacie z filmów, #żywe kolory</p>
+                    <a href="https://instagram.com/" target="_blank" class="instagram-icon">
+                        <i class="fab fa-instagram"></i> bugs.bunny.tattoo
+                    </a>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
+</main>
 
-    <main class="flex-fill">
-        <section id="studio-description" class="text-center py-5">
-            <div class="overlay p-4 rounded">
-                <h2>InkHouse Studio</h2>
-                <p>InkHouse Studio to miejsce, gdzie Twoje ciało spotyka się z prawdziwą sztuką – a czasem odrobiną szaleństwa. Nasi mistrzowie zamienią twoją wizję w unikalne arcydzieło - nawet zwykły wilk na przedramieniu będzie wyglądał lepiej niż inne ;)</p>
-                <p>Wpadnij do nas na konsultacje przy aromatycznej kawce, a my zrobimy wszystko, żebyś wyszedł z tatuażem, który będzie Cię cieszył przez całe życie (i który mama może kiedyś zaakceptuje). Więcej niż studio - doświadcz magii w InkHouse!</p>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="text-white text-center py-3 mt-auto">
-        <p class="m-0">&copy; 2024 InkHouse Studio. Wszelkie prawa zastrzeżone.</p>
-    </footer>
+<footer class="text-white text-center py-3 mt-auto">
+    <p class="m-0">&copy; 2024 InkHouse Studio. Wszelkie prawa zastrzeżone.</p>
+</footer>
 </body>
 </html>
