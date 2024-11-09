@@ -1,4 +1,4 @@
-/* Reset i ogólne ustawienia */
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -7,8 +7,6 @@
     padding: 0;
 }
 
-
-
 html, body {
     height: 100%;
     margin: 0;
@@ -16,14 +14,13 @@ html, body {
     padding-top: 30px;
 }
 
-/* Layout */
+/* Main content */
 main {
-    flex: 1; /* Umożliwia elastyczne wypełnienie strony */
+    flex: 1;
 }
 
-/* Nagłówek i menu */
+/* Navbar styles */
 .navbar-brand img {
-    width: auto;
     height: 30px;
 }
 
@@ -44,15 +41,7 @@ main {
 }
 
 .custom-menu .nav-item {
-    border-bottom: none;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.custom-menu .nav-link {
-    color: white;
-    font-size: 1.2rem;
-    padding: 8px 15px;
+    margin: 0 20px;
 }
 
 .custom-menu .nav-link:hover {
@@ -70,11 +59,9 @@ main {
     }
 }
 
-/* Sekcja opisu studia */
+/* Studio description section */
 #studio-description {
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('../images/bg.jpg') center/cover;
     color: white;
     text-align: justify;
     width: 100%;
@@ -86,13 +73,14 @@ main {
 }
 
 #studio-description .overlay {
-    background: rgba(0, 0, 0, 0.6); /* Ciemniejsza nakładka */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     max-width: 600px;
     border-radius: 8px;
     margin: auto;
 }
 
+/* Heading styles */
 .heading-decorated {
     display: flex;
     align-items: center;
@@ -111,6 +99,7 @@ main {
     margin: 0 20px;
 }
 
+/* Artist section styles */
 .artist-photo {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -127,16 +116,23 @@ main {
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
 }
 
 .artist-section:last-child {
     margin-bottom: 0;
 }
 
+.artist-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .artist-description h3 {
     color: coral;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .artist-description > p {
@@ -147,17 +143,6 @@ main {
 .artist-styles {
     color: #bf502c;
     font-size: 0.9rem;
-}
-
-.artist-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-}
-
-.artist-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .instagram-icon {
@@ -174,6 +159,7 @@ main {
     color: white;
 }
 
+/* Contact section */
 #contact {
     color: white;
 }
@@ -199,7 +185,7 @@ main {
 }
 
 #contact ul {
-    list-style-type: none;
+    list-style: none;
     padding-left: 0;
 }
 
@@ -214,15 +200,12 @@ main {
 }
 
 .contact-items:hover {
-    text-decoration: none;
     color: white;
 }
 
 .embed-responsive {
     position: relative;
-    display: block;
     width: 100%;
-    padding: 0;
     height: 300px;
     margin-top: 20px;
 }
@@ -236,19 +219,23 @@ main {
     border: 0;
 }
 
-/* Kolumny o pełnej szerokości w układzie flex */
+/* Contact form */
 #contact_form .col-md-7, #contact_form .col-md-5 {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
 }
 
-/* Sprawia, że textarea zajmuje pełną szerokość kolumny */
 #message {
     height: calc(100% - 67px);
 }
 
-/* Styl dla pól formularza */
+@media (max-width: 575px) {
+    #message {
+        height: 150px;
+    }
+}
+
 .form-control {
     border-radius: 5px;
     border: 2px solid #202020;
@@ -264,7 +251,6 @@ main {
     border: 2px solid coral;
 }
 
-/* Wyrównanie przycisku do prawego dolnego rogu */
 #contact_form .d-flex {
     align-items: flex-end;
     justify-content: flex-end;
@@ -286,9 +272,7 @@ main {
     background-color: #913820;
 }
 
-
-
-/* Stopka */
+/* Footer styles */
 footer {
     background-color: #1c1c1c;
     color: #fff;
