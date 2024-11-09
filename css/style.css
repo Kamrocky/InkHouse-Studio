@@ -10,9 +10,11 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #202020;
+    /*background-color: #202020;*/
     padding-top: 30px;
+    background: linear-gradient(135deg, #202020, #393939) fixed;
 }
+
 
 /* Main content */
 main {
@@ -22,6 +24,11 @@ main {
 /* Navbar styles */
 .navbar-brand img {
     height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(-2deg);
 }
 
 .nav-link {
@@ -295,6 +302,12 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Style for checked checkboxes */
+.form-check-input:checked {
+    background-color: coral;
+    border-color: #da6741;
+}
+
 /* Gallery container */
 #gallery {
     display: grid;
@@ -378,4 +391,34 @@ footer {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.table {
+    border: 2px solid dimgray;
+    border-radius: 8px;
+}
+
+.table tr {
+    border: 1px dotted dimgray;
+}
+
+.table th {
+    color: coral;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid dimgray;
+    transition: 0.3s;
+}
+
+.table td:hover{
+    color: coral;
+}
+
+.table td {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dotted dimgray;
+}
+
+#pricing p{
+    color: coral;
 }
