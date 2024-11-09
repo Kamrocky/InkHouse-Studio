@@ -9,3 +9,50 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Existing code for filtering gallery
+    const checkboxes = document.querySelectorAll(".form-check-input");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    const filterGallery = () => {
+        const selectedArtists = Array.from(checkboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+        galleryItems.forEach(item => {
+            const isVisible = selectedArtists.includes(item.dataset.artist);
+            item.classList.toggle("d-none", !isVisible);
+        });
+    };
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", filterGallery);
+    });
+
+    filterGallery();
+
+    // Modal functionality
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    galleryItems.forEach(item => {
+        item.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.querySelector("img").src;
+            captionText.innerHTML = this.querySelector("img").alt;
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+});
