@@ -10,6 +10,9 @@ document.addEventListener("scroll", function() {
     });
 });
 
+/**
+ * Initializes the gallery filtering functionality and modal functionality when the DOM content is loaded.
+ */
 document.addEventListener("DOMContentLoaded", function() {
     // Existing code for filtering gallery
     const checkboxes = document.querySelectorAll(".form-check-input");
@@ -57,6 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 
+/**
+ * Ensures that only one accordion item is expanded at a time.
+ */
 document.addEventListener("DOMContentLoaded", function() {
     const accordionItems = document.querySelectorAll(".accordion-item");
 
