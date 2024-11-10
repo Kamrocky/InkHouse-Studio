@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ - InkHouse Studio</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to Bootstrap CSS for responsive design and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom CSS styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link to custom JavaScript file, deferred to load after HTML -->
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<header class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container-fluid">
+        <!-- Brand logo linking to the homepage -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo InkHouse">
+        </a>
+        <!-- Button for toggling the navigation menu on small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible navigation menu -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto text-center custom-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">O&nbsp;nas</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Cennik</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="flex-fill">
+    <div class="container py-5">
+        <h2 class="heading-decorated">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Jak mogę przygotować się do sesji tatuowania?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Upewnij się, że jesteś dobrze nawodniony i wypoczęty. Unikaj alkoholu i kofeiny na dobę przed sesją, gdyż mogą zwiększyć krwawienie. Ubierz się wygodnie, szczególnie jeśli sesja potrwa kilka godzin. Przynieś ze sobą przekąski i napoje, aby mieć energię podczas sesji.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Czy tatuowanie jest bolesne i które miejsca są najbardziej wrażliwe?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Ból podczas tatuowania zależy od miejsca i indywidualnej tolerancji na ból. Najbardziej wrażliwe obszary to żebra, kręgosłup, dłonie i stopy. Nasz tatuażysta pomoże dobrać odpowiednie miejsce, jeśli jest to Twój pierwszy tatuaż.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Jak długo trwa wykonanie tatuażu?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Czas zależy od wielkości i skomplikowania projektu. Małe tatuaże mogą zająć 1-2 godziny, podczas gdy duże lub szczegółowe prace mogą wymagać kilku sesji trwających po kilka godzin każda.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Czy muszę zrobić przerwę w treningach i ćwiczeniach po tatuowaniu?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tak, najlepiej jest unikać intensywnego wysiłku przez co najmniej tydzień, szczególnie jeśli tatuaż znajduje się w miejscu, które mogłoby być narażone na pot, rozciąganie lub kontakt z powierzchniami.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Jak długo trwa proces gojenia się tatuażu i na co muszę uważać?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Wstępne gojenie trwa około 1-2 tygodni, ale pełne wchłonięcie tuszu i regeneracja skóry mogą potrwać do 6 tygodni. W tym czasie unikaj bezpośredniego kontaktu z wodą, słońcem i brudnymi powierzchniami.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Jak powinienem pielęgnować świeży tatuaż?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Umyj tatuaż delikatnym mydłem, osusz ręcznikiem papierowym i nałóż cienką warstwę kremu nawilżającego do pielęgnacji tatuaży. Powtarzaj proces mycia i nawilżania przez pierwszy tydzień lub zgodnie z zaleceniami tatuażysty.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Czy mogę wystawiać świeży tatuaż na słońce lub chodzić na basen?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nie zaleca się opalania świeżego tatuażu ani kontaktu z wodą chlorowaną przez minimum dwa tygodnie. Promienie UV mogą uszkodzić tusz i spowodować blaknięcie, a woda może zainfekować ranę.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Czy mogę przyjść na sesję tatuowania pod wpływem alkoholu lub środków przeciwbólowych?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutnie nie. Alkohol i leki rozrzedzają krew, co zwiększa ryzyko krwawienia i negatywnie wpływa na efekt końcowy tatuażu. Przyjdź na sesję trzeźwy i wypoczęty.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Jak długo utrzymuje się kolor tatuażu? Czy muszę go co jakiś czas odświeżać?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Kolor tatuażu może blaknąć z upływem lat, szczególnie w miejscach narażonych na słońce. W zależności od pielęgnacji, odświeżenie tatuażu można rozważyć co kilka lat.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Jakie są zalecenia po wykonaniu tatuażu w pierwszych dniach?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Unikaj dotykania tatuażu brudnymi rękami, nie zdrapuj strupków i dbaj o odpowiednie nawilżenie skóry. Noś luźne ubrania, aby uniknąć podrażnień i przylegania materiału do świeżej rany.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Czy istnieją przeciwwskazania do wykonania tatuażu, takie jak choroby lub przyjmowanie leków?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tak, niektóre schorzenia, jak cukrzyca, choroby skóry czy przyjmowanie leków rozrzedzających krew mogą wymagać konsultacji z lekarzem przed wykonaniem tatuażu. Zawsze informuj tatuażystę o stanie zdrowia.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Jakie są ryzyka związane z tatuażami i jak studio dba o higienę i bezpieczeństwo?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tatuaż, jak każda ingerencja w skórę, niesie ryzyko infekcji. W naszym studio przestrzegamy rygorystycznych zasad higieny, używając jednorazowych igieł, sterylizowanych narzędzi i dezynfekując stanowisko po każdym kliencie.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        Czy mogę przynieść własny projekt tatuażu lub inspiracje?
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oczywiście! Nasz zespół uwielbia tworzyć unikatowe projekty, inspirowane przyniesionymi wzorami. Wspólnie dopracujemy szczegóły i dostosujemy projekt do Twoich preferencji.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                        Czy możliwe jest wykonanie tatuażu na bliźnie i jak wygląda proces jego gojenia?
+                    </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tak, jest możliwe wykonanie tatuażu na bliźnie, ale każda blizna jest inna. Skonsultujemy, czy blizna jest odpowiednia do tatuowania i jakiej pielęgnacji wymaga po sesji.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFifteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        Czy mogę w przyszłości usunąć tatuaż laserem i jakie są możliwości korekty tatuaży?
+                    </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Usuwanie tatuażu laserem jest możliwe, ale wymaga wielu sesji i może pozostawić ślad. W niektórych przypadkach możliwa jest korekta lub zakrycie starego tatuażu nowym wzorem.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-white text-center py-3 mt-auto">
+    <p class="m-0">&copy; 2024 InkHouse Studio. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<!-- Link to Bootstrap JavaScript bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

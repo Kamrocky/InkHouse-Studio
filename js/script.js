@@ -56,3 +56,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+        const button = item.querySelector(".accordion-button");
+        button.addEventListener("click", () => {
+            accordionItems.forEach(i => {
+                if (i !== item) {
+                    const collapse = i.querySelector(".accordion-collapse");
+                    collapse.classList.remove("show");
+                }
+            });
+        });
+    });
+});

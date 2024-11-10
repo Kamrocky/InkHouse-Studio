@@ -13,8 +13,12 @@ html, body {
     /*background-color: #202020;*/
     padding-top: 30px;
     background: linear-gradient(135deg, #202020, #393939) fixed;
+    font-family: 'Lora', serif;
 }
 
+h1, h2, h3, .navbar-brand {
+    font-family: 'Oswald', sans-serif; /* Dla nagłówków i logo */
+}
 
 /* Main content */
 main {
@@ -421,4 +425,46 @@ footer {
 
 #pricing p{
     color: coral;
+}
+
+.accordion {
+    text-align: justify;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transition: 0.3s ease;
+}
+
+/* Efekt po najechaniu */
+.accordion-button:hover {
+    background-color: #bf502c;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Styl dla otwartego przycisku */
+.accordion-button:not(.collapsed) {
+    background-color: #bf502c;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Stylowanie ciała akordeonu */
+.accordion-body {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
